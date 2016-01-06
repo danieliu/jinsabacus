@@ -1,10 +1,15 @@
-<?php get_template_part('templates/page', 'header'); ?>
+<section class="splash about-splash">
+	<div class="container">
+		<div class="row">
+			<?php get_template_part('templates/page', 'header'); ?>
+		</div>
+	</div>
+</section>
 
 <?php if (!have_posts()) : ?>
   <div class="alert alert-warning">
     <?php _e('Sorry, no results were found.', 'sage'); ?>
   </div>
-  <?php get_search_form(); ?>
 <?php endif; ?>
 
 <?php while (have_posts()) : the_post(); ?>

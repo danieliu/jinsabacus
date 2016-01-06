@@ -26,3 +26,10 @@ foreach ($sage_includes as $file) {
   require_once $filepath;
 }
 unset($file, $filepath);
+
+$header = array(
+  'width' => 1500,
+  'height' => 890,
+  'default-image' => get_template_directory_uri() . '/dist/images/header.jpg',
+);
+add_theme_support('custom-header', $header);

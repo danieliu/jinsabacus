@@ -8,3 +8,9 @@
 .sidebar {
   @include make-sm-column($sidebar-sm-columns);
 }
+
+.container {
+	width: 90%;
+	margin: 0 auto;
+	max-width: 1400px;
+}

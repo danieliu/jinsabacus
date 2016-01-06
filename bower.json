@@ -1,8 +1,8 @@
 {
-  "name": "sage",
-  "homepage": "https://roots.io/sage/",
+  "name": "Jin's Abacus",
+  "homepage": "http://www.jinsabacus.com/",
   "authors": [
-    "Ben Word <ben@benword.com>"
+    "Daniel Liu"
   ],
   "license": "MIT",
   "private": true,

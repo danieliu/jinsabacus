@@ -18,6 +18,10 @@
     // All pages
     'common': {
       init: function() {
+        var $navbar = $('.fixed-navbar');
+        $(document).scroll(function() {
+          $(this).scrollTop() > 0 ? $navbar.addClass('scrolled') : $navbar.removeClass('scrolled');
+        });
         // JavaScript to be fired on all pages
       },
       finalize: function() {
