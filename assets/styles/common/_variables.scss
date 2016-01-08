@@ -6,14 +6,16 @@ $main-sm-columns:       12;
 $sidebar-sm-columns:    4;
 
 // Colors
-$brand-primary:         #D7B3Af;
+$brand-primary:         #2274A5;
 
 // Typography
 $font-family-sans-serif: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif !default;
 
 // Navbar
 $nav-size: 60px;
-$navlink-pad: ($nav-size - 20px) / 4
+$navlink-pad: ($nav-size - 20px) / 4;
 
-// Media queries
-
+// Categories
+$competitions: #D81159;
+$announcements: #F5BB00;
+$graduates: #218380;

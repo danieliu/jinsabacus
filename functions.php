@@ -32,4 +32,20 @@ $header = array(
   'height' => 890,
   'default-image' => get_template_directory_uri() . '/dist/images/header.jpg',
 );
+
 add_theme_support('custom-header', $header);
+
+// Post excerpt length
+function custom_excerpt_length( $length ) {
+  return 35;
+}
+add_filter('excerpt_length', 'custom_excerpt_length');
+
+// Post excerpt ellipsis
+function new_excerpt_more( $more ) {
+  return ' [...]';
+}
+add_filter('excerpt_more', 'new_excerpt_more');
+
+add_image_size( 'custom-thumb', 640, 360, array( 'center', 'center') );
+add_image_size( 'custom-splash', 1920, 1080, array( 'center', 'center') );

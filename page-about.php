@@ -1,4 +1,4 @@
-<section class="splash">
+<section class="splash about-splash">
 	<div class="container">
 		<div class="row">
 			<?php get_template_part('templates/page', 'header'); ?>
