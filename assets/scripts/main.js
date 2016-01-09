@@ -18,11 +18,20 @@
     // All pages
     'common': {
       init: function() {
+        // JavaScript to be fired on all pages
+
+        // Navbar change color on scroll
         var $navbar = $('.fixed-navbar');
         $(document).scroll(function() {
           $(this).scrollTop() > 0 ? $navbar.addClass('scrolled') : $navbar.removeClass('scrolled');
         });
-        // JavaScript to be fired on all pages
+
+        // Mobile hamburger menu activate
+        $('.nav-button').click(function() {
+          $(this).toggleClass('active');
+          $('body').toggleClass('nav-open');
+        });
+
       },
       finalize: function() {
         // JavaScript to be fired on all pages, after page specific JS is fired

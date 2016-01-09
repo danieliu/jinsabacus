@@ -16,5 +16,12 @@
 				?>
 			</nav>
 		</div>
+		<button class="nav-button">
+			<span class="ham-menu">
+				<i class="top_line"></i>
+				<i class="mid_line"></i>
+				<i class="bot_line"></i>
+			</span>
+		</button>
 	</div>
 </header>

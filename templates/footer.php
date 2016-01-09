@@ -1,7 +1,5 @@
-<footer class="content-info">
-  <div class="container">
-  	<div class="row">
-  		<?php dynamic_sidebar('sidebar-footer'); ?>
-  	</div>
-  </div>
+<footer>
+	<div class="container">
+		<span>© 2016 Jin's Mental Arithmetic Academy</span>
+	</div>
 </footer>

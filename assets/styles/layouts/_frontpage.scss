@@ -29,34 +29,42 @@
 	font-weight: 700;
 	font-size: 60px;
 	color: #fff;
-	margin-top: 120px;
-	margin-bottom: 0;
+	margin-top: 110px;
+	margin-bottom: 15px;
 	text-transform: uppercase;
+
+	@media (max-width: $screen-sm-max) {
+		font-size: 40px;
+	}
 }
 
 .tagline {
 	font-weight: 300;
 	font-size: 20px;
-	margin-top: 20px;
-	margin-bottom: 50px;
+	margin-top: 0;
+	margin-bottom: 30px;
 	text-transform: none;
+
+	@media (max-width: $screen-sm-max) {
+		font-size: 16px;
+	}
 }
 
 .btn-contact {
 	display: inline-block;
 	color: #fff;
-	font-weight: 600;
-	background-color: $brand-primary;
+	font-size: 18px;
+	// font-weight: 600;
+	background-color: lighten($brand-primary, 5%);
 	position: relative;
 	width: 200px;
 	padding: 10px;
 	border-radius: 2px;
-	text-transform: uppercase;
-	transition: background-color 0.2s;
+	transition: background-color 0.15s;
 
 	&:hover, &:focus {
 		color: #fff;
-		background-color: darken($brand-primary, 5%);
+		background-color: lighten($brand-primary, 15%);
 	}
 }
 
@@ -73,7 +81,7 @@
 		height: 1px;
 		position: relative;
 		vertical-align: middle;
-		width: 14%;
+		width: 12%;
 		background: rgba(0,0,0,0.2);
 
 		@media (min-width: $screen-sm-min) {
@@ -82,11 +90,11 @@
 	}
 
 	&:before {
-		margin-right: 15px;
+		margin-right: 10px;
 	}
 
 	&:after {
-		margin-left: 15px;
+		margin-left: 10px;
 	}
 }
 

@@ -5,10 +5,10 @@
 	} ?>')">
 	<div class="container">
 		<div class="row">
-			<h1 class="headline">learn <span>abacus</span> today</h1>
-			<h2 class="tagline">improve your child's memory, concentration, and learning ability</h2>
+			<h1 class="headline">learn abacus today</h1>
+			<h2 class="tagline">Enhance your memory, concentration, and mental arithmetic ability</h2>
 			<p>
-				<a class="button btn-contact" href="<?php echo get_permalink( get_page_by_path( 'contact') ); ?>">Register Now</a>
+				<a class="button btn-contact" href="<?php echo get_permalink( get_page_by_path( 'contact') ); ?>">Get Started</a>
 			</p>
 		</div>
 	</div>
