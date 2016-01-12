@@ -47,9 +47,6 @@ function new_excerpt_more( $more ) {
 }
 add_filter('excerpt_more', 'new_excerpt_more');
 
-add_image_size( 'custom-thumb', 640, 360, array( 'center', 'center') );
-add_image_size( 'custom-splash', 1920, 1080, array( 'center', 'center') );
-
 // Menu items slug class
 function add_slug_class_to_menu_item($output){
   $ps = get_option('permalink_structure');
@@ -64,6 +61,10 @@ function add_slug_class_to_menu_item($output){
   return $output;
 }
 add_filter('wp_nav_menu', 'add_slug_class_to_menu_item');
+
+add_image_size( 'custom-thumb', 640, 360, array( 'center', 'center') );
+add_image_size( 'custom-post-thumb', 300, 200, array( 'center', 'center') );
+add_image_size( 'custom-splash', 1920, 1080, array( 'center', 'center') );
 
 add_filter('post_gallery', 'my_post_gallery', 10, 2);
 function my_post_gallery($output, $attr) {
@@ -109,7 +110,7 @@ function my_post_gallery($output, $attr) {
     // Now you loop through each attachment
     foreach ($attachments as $id => $attachment) {
         // Fetch the thumbnail (or full image, it's up to you)
-        $imgmed = wp_get_attachment_image_src($id, 'medium');
+        $imgmed = wp_get_attachment_image_src($id, 'custom-post-thumb');
 //      $img = wp_get_attachment_image_src($id, 'my-custom-image-size');
         $img = wp_get_attachment_image_src($id, 'full');
 

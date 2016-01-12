@@ -81,6 +81,10 @@
 			border-bottom: $graduates;
 		}
 
+		p {
+			font-size: 1.1em;
+		}
+
 		ol {
 			font-size: 1.1em;
 
@@ -141,8 +145,11 @@
 }
 
 .gallery {
+	font-size: 0;
+	text-align: center;
+
 	figure {
-		float: left;
+		display: inline-block;
 		width: percentage(1/3);
 	}
 
