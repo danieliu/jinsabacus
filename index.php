@@ -25,6 +25,10 @@
 <?php endwhile; ?>
 
 		</div>
-		<?php the_posts_navigation(); ?>
+		<h2 class="screen-reader-text">Posts navigation</h2>
+		<div class="nav-links">
+			<div class="nav-next"><?php previous_posts_link( '&laquo; Newer Posts' ); ?></div>
+			<div class="nav-previous"><?php next_posts_link( 'Older Posts &raquo;', '' ); ?></div>
+		</div>
 	</div>
 </section>
