@@ -27,8 +27,12 @@
 		</div>
 		<h2 class="screen-reader-text">Posts navigation</h2>
 		<div class="nav-links">
-			<div class="nav-next"><?php previous_posts_link( '&laquo; Newer Posts' ); ?></div>
-			<div class="nav-previous"><?php next_posts_link( 'Older Posts &raquo;', '' ); ?></div>
+			<?php if( get_previous_posts_link() ): ?>
+				<div class="nav-next"><?php previous_posts_link( '&laquo; Newer Posts' ); ?></div>
+			<?php endif ?>
+			<?php if( get_next_posts_link() ): ?>
+				<div class="nav-previous"><?php next_posts_link( 'Older Posts &raquo;', '' ); ?></div>
+			<?php endif ?>
 		</div>
 	</div>
 </section>
