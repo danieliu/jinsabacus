@@ -18,6 +18,7 @@ body.nav-open {
 		ul {
 			display: block;
 			margin: 0;
+			padding: 0;
 		}
 
 		@media (max-width: $screen-xs-max) {
@@ -29,13 +30,12 @@ body.nav-open {
 			left: 0;
 			bottom: 0;
 			right: 0;
-			background-color: #222;
+			background-color: $dark-primary;
 			transition: opacity 0.2s ease-in-out, visibility 0.2s linear;
 
 			.menu {
 				position: absolute;
 				left: 50%;
-				padding: 0;
 				transform: translateX(-50%);
 			}
 
@@ -57,7 +57,6 @@ body.nav-open {
 		a {
 			position: relative;
 			font-weight: 700;
-			letter-spacing: 1px;
 			display: block;
 			padding: $navlink-pad 0;
 			margin: 0 20px;
@@ -71,11 +70,11 @@ body.nav-open {
 				content: '';
 				display: block;
 				position: absolute;
-				bottom: 5px;
+				bottom: 7px;
 				left: 0;
 				height: 3px;
 				width: 100%;
-				background-color: lighten($brand-primary, 10%);
+				background-color: lighten($brand-primary, 5%);
 				-webkit-transform-origin: right top;
 				-ms-transform-origin: right top;
 				transform-origin: right top;
@@ -115,7 +114,7 @@ body.nav-open {
 	transition: background-color 0.3s ease-in-out;
 
 	&.scrolled {
-		background-color: #222;
+		background-color: $dark-primary;
 		box-shadow: 0 1px 5px rgba(0,0,0,0.18);
 	}
 }
@@ -129,13 +128,27 @@ body.nav-open {
 	position: relative;
 	z-index: 1;
 	float: left;
+	height: $nav-size;
+
 
 	a {
+		display: block;
+		position: relative;
+		top: 50%;
+		transform: translateY(-50%);
+		font-weight: 300;
+		font-size: 2em;
 		color: #fff;
+		text-transform: uppercase;
+		-webkit-font-smoothing: antialiased;
 		transition: opacity 0.3s;
 
+		strong {
+			font-weight: 800;
+		}
+
 		&:hover {
-			opacity: 0.7;
+			opacity: 0.75;
 		}
 	}
 }
@@ -167,7 +180,7 @@ body.nav-open {
 		position: relative;
 		display: block;
 		height: 20px;
-		width: 30px;
+		width: 32px;
 
 		i {
 			position: absolute;

@@ -3,7 +3,7 @@
 		<div class="container">
 			<nav class="nav-container clearfix">
 				<div class="logo">
-					<a href="<?= esc_url(home_url('/')); ?>"><?php bloginfo('name') ?></a>
+					<a href="<?= esc_url(home_url('/')); ?>">Jins<strong>Abacus</strong></a>
 				</div>
 				<?php
 				if (has_nav_menu('primary_navigation')) :

@@ -1,7 +1,7 @@
 <section class="splash" style="background-image: url('<?php if ( has_post_thumbnail() ) {
 		the_post_thumbnail_url('custom-splash');
 	} else {
-		echo bloginfo('template_directory') . "/dist/images/default-about.jpg";
+		echo bloginfo('template_directory') . "/dist/images/default-faq.jpg";
 	} ?>')">
 	<div class="container">
 		<div class="row">

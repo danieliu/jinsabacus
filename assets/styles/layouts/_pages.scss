@@ -2,7 +2,220 @@
 	padding: 0;
 }
 
-.main-content {
-	background-color: #eee;
-	padding: 20px 0;
+.splash {
+	background-position: center center;
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	text-align: center;
+	height: 500px;
+	width: 100%;
+	position: relative;
+	padding: 80px 0 50px;
+
+	&:before {
+		content: "";
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		opacity: 0.4;
+		background-color: #000;
+	}
+
+	&.front-splash {
+		height: 600px;
+	}
+
+	&.index-splash {
+		height: 400px;
+	}
+
+	&.error-splash {
+		height: 100vh;
+	}
+
+	.container {
+		position: relative;
+		top: 50%;
+		transform: translateY(-50%);
+	}
+}
+
+.front-content, .main-content {
+	padding: 30px 0 50px;
+	background-color: $light-grey-primary;
+
+	@media (max-width: $screen-xs-max) {
+		.container {
+			width: 100%;
+			padding: 0;
+		}
+
+		.news-row {
+			margin-left: 0;
+			margin-right: 0;
+		}
+
+		.news-item {
+			padding-left: 0;
+			padding-right: 0;
+		}
+	}
+}
+
+
+// Call to action
+.headline, .tagline {
+	position: relative;
+	font-weight: 800;
+	font-size: 4.2em;
+	color: #fff;
+	margin-top: 0;
+	margin-bottom: 15px;
+	text-transform: uppercase;
+	-webkit-font-smoothing: antialiased;
+
+	@media (max-width: $screen-sm-max) {
+		font-size: 40px;
+	}
+}
+
+.info-title, .error-title, .error-tagline {
+	max-width: 500px;
+	margin-left: auto;
+	margin-right: auto;
+
+	@media (min-width: $screen-md-min) {
+		max-width: 750px;
+	}
+}
+
+.tagline {
+	font-weight: 400;
+	font-size: 1.4em;
+	margin-top: 0;
+	margin-bottom: 30px;
+	text-transform: none;
+
+	@media (max-width: $screen-sm-max) {
+		font-size: 16px;
+	}
+}
+
+.error-title {
+	margin-top: 0;
+	font-size: 10em;
+}
+
+.error-tagline {
+	font-size: 1.4em;
+}
+
+// Card-like content on static pages (about, faq, contact)
+.mid-row {
+	position: relative;
+	max-width: 900px;
+	background: #fff;
+	border-radius: 3px;
+	margin: -150px auto 0;
+	padding: 40px 20px;
+	border-color: #e5e6e9;
+	border-style: solid;
+	border-width: 0 1px 1px 1px;
+
+	ul {
+		padding: 0;
+		margin: 0;
+		list-style-type: none;
+	}
+
+	li {
+		margin-bottom: 60px;
+
+		&:last-child {
+			margin-top: 80px;
+		}
+	}
+
+	h2 {
+		margin: 0 auto 0.5em;
+		font-size: 1.8em;
+		max-width: 26.44em;
+
+		&:first-child {
+			margin-top: 30px;
+		}
+	}
+}
+
+.info-content {
+	margin: 0 auto 1.4em;
+	max-width: 34em;
+	font-size: 1.4em;
+	color: $dark-grey-primary;
+	letter-spacing: 0.25px;
+	-webkit-font-smoothing: antialiased;
+
+	&:first-child {
+		margin-top: 30px;
+	}
+}
+
+// Contact page
+.contact-info {
+	margin-top: -150px;
+
+	h2 {
+		text-align: center;
+		text-transform: uppercase;
+		margin: 20px auto 50px;
+		font-weight: 700;
+	}
+
+	.connect-info {
+		font-size: 1.2em;
+		font-weight: 700;
+		text-align: center;
+		margin-bottom: 3em;
+
+		a {
+			font-weight: 400;
+			text-decoration: underline;
+			color: $dark-grey-primary;
+			transition: color 0.3s;
+
+			&:hover {
+				color: #ccc;
+			}
+		}
+
+		span {
+			display: block;
+		}
+
+		&:last-of-type {
+			margin-bottom: 1em;
+		}
+	}
+
+	.info-content {
+		max-width: 25em;
+		text-align: center;
+		margin-bottom: 3em;
+	}
+
+	table {
+		color: $dark-grey-primary;
+		margin: 0 auto 30px;
+		text-align: center;
+		font-size: 1.2em;
+
+		td {
+			width: 10em;
+			height: 2em;
+		}
+	}
 }

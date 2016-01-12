@@ -1,0 +1,181 @@
+// Blog/News content
+.wide-row {
+	position: relative;
+	max-width: 1100px;
+	background: #fff;
+	border-radius: 3px;
+	margin: -200px auto 0;
+	padding: 60px 40px;
+	border-color: #e5e6e9;
+	border-style: solid;
+	border-width: 0 1px 1px 1px;
+
+	@media (max-width: $screen-xs-max) {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+
+	header {
+		text-align: center;
+		margin: 20px 0;
+	}
+
+	.post-title, .post-meta {
+		margin: 0 auto 15px;
+		padding: 0 15px;
+		max-width: 600px;
+		font-size: 3.6em;
+		font-weight: 800;
+
+		@media (max-width: $screen-xs-max) {
+			font-size: 2.7em;
+			padding-left: 0;
+			padding-right: 0;
+		}
+	}
+
+	.post-category {
+		display: inline-block;
+		padding: 1px 6px;
+		color: #fff;
+		margin-bottom: 25px;
+
+		&.competitions {
+			background-color: $competitions;
+		}
+
+		&.announcements {
+			background-color: $announcements;
+		}
+
+		&.graduates {
+			background-color: $graduates;
+		}
+	}
+
+	.post-meta {
+		font-size: 1.3em;
+		font-weight: 400;
+
+		time {
+			color: #a7a7a7;
+		}
+	}
+
+	.post-content {
+		margin: 0 auto;
+		padding: 15px 0;
+		max-width: 820px;
+		font-size: 1.1em;
+		min-height: 0;
+
+		&.competitions a {
+			border-bottom: 2px solid $competitions;
+		}
+
+		&.announcements a {
+			border-bottom: $announcements;
+		}
+
+		&.graduates a {
+			border-bottom: $graduates;
+		}
+
+		ol {
+			font-size: 1.1em;
+
+			li {
+				margin-bottom: 10px;
+			}
+		}
+	}
+
+	.post-separator {
+		width: 160px;
+		border: 3px solid #eee;
+
+		&.competitions {
+			border-color: $competitions;
+		}
+
+		&.announcements {
+			border-color: $announcements;
+		}
+
+		&.graduates {
+			border-color: $graduates;
+		}
+	}
+
+	.attachment {
+		text-align: center;
+	}
+}
+
+.nav-links {
+	text-align: center;
+	margin: 15px 0 30px;
+}
+
+.nav-previous, .nav-next {
+	display: inline-block;
+	text-align: center;
+	margin: 0 15px;
+
+	a {
+		display: block;
+		text-align: center;
+		font-size: 16px;
+		margin: 0 auto;
+		padding: 10px 20px;
+		background-color: #aaa;
+		border-radius: 3px;
+		color: #fff;
+		transition: background-color 0.15s;
+
+		&:hover, &:focus {
+			color: #fff;
+			background-color: $brand-primary;
+		}
+	}
+}
+
+.gallery {
+	figure {
+		float: left;
+		width: percentage(1/3);
+	}
+
+	a {
+		border: none !important;
+		display: block;
+		margin: 5px;
+		overflow: hidden;
+	}
+
+	img {
+		width: 100%;
+		height: auto;
+		transition: transform 0.2s;
+
+		&:hover {
+			transform: scale(1.1);
+		}
+	}
+}
+
+article.post {
+	table {
+		margin: 0 auto;
+		width: 70%;
+	}
+
+	td {
+		padding: 10px 0 10px 30px;
+	}
+}
+
+.alert-warning {
+	margin-right: 15px;
+	margin-left: 15px;
+}

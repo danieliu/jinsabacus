@@ -1,61 +1,9 @@
-.splash {
-	background-position: center center;
-	background-repeat: no-repeat;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	background-size: cover;
-	text-align: center;
-	height: 600px;
-	width: 100%;
-	position: relative;
-	padding: 80px 0 50px;
-
-	&:before {
-		content: "";
-		position: absolute;
-		top: 0;
-		right: 0;
-		bottom: 0;
-		left: 0;
-		opacity: 0.5;
-		background-color: #000;
-	}
-}
-
-
-// Call to action
-.headline, .tagline {
-	position: relative;
-	font-weight: 700;
-	font-size: 60px;
-	color: #fff;
-	margin-top: 110px;
-	margin-bottom: 15px;
-	text-transform: uppercase;
-
-	@media (max-width: $screen-sm-max) {
-		font-size: 40px;
-	}
-}
-
-.tagline {
-	font-weight: 300;
-	font-size: 20px;
-	margin-top: 0;
-	margin-bottom: 30px;
-	text-transform: none;
-
-	@media (max-width: $screen-sm-max) {
-		font-size: 16px;
-	}
-}
-
 .btn-contact {
 	display: inline-block;
 	color: #fff;
 	font-size: 18px;
 	// font-weight: 600;
-	background-color: lighten($brand-primary, 5%);
+	background-color: $brand-primary;
 	position: relative;
 	width: 200px;
 	padding: 10px;
@@ -64,7 +12,7 @@
 
 	&:hover, &:focus {
 		color: #fff;
-		background-color: lighten($brand-primary, 15%);
+		background-color: lighten($brand-primary, 10%);
 	}
 }
 
@@ -252,10 +200,10 @@
 	background-color: #aaa;
 	border-radius: 3px;
 	color: #fff;
-	transition: background-color 0.2s;
+	transition: background-color 0.15s;
 
-	&:hover {
+	&:hover, &:focus {
 		color: #fff;
-		background-color: #777;
+		background-color: $brand-primary;
 	}
 }

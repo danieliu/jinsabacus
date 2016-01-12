@@ -23,7 +23,11 @@
         // Navbar change color on scroll
         var $navbar = $('.fixed-navbar');
         $(document).scroll(function() {
-          $(this).scrollTop() > 0 ? $navbar.addClass('scrolled') : $navbar.removeClass('scrolled');
+          if ($(this).scrollTop() > 0) {
+            $navbar.addClass('scrolled');
+          } else {
+            $navbar.removeClass('scrolled');
+          }
         });
 
         // Mobile hamburger menu activate

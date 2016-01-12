@@ -16,3 +16,14 @@ For installation notes and features, refer to the [Sage source page](https://git
 ## Installation
 
 Clone the git repo `git clone https://github.com/danieliu/jinsabacus.git` and copy to your themes directory in `/wp-content/themes/`.
+
+
+## Customization
+
+| Page          | Default Image
+| ------------- | --------------|
+| Front Page    | `header.jpg` |
+| About         | `default-about.jpg` |
+| FAQ           | `default-faq.jpg` |
+| Blog/News     | `default-news.jpg` |
+| Contact       | `default-contact.jpg` |
