@@ -49,15 +49,97 @@
 .news-item {
 	padding: 0 10px 10px;
 	margin-bottom: 25px;
+
+	.post-featured {
+		display: block;
+		overflow: hidden;
+	}
+
+	&.uncategorized {
+		.post-category {
+			background-color: $uncategorized;
+		}
+
+		.post-title a:hover {
+			color: $uncategorized;
+		}
+
+		.post-continued a {
+			border-color: $uncategorized;
+
+			&:hover {
+				color: $uncategorized;
+			}
+		}
+	}
+
+	&.announcements {
+		.post-category {
+			background-color: $announcements;
+		}
+
+		.post-title a:hover {
+			color: $announcements;
+		}
+
+		.post-continued a {
+			border-color: $announcements;
+
+			&:hover {
+				color: $announcements;
+			}
+		}
+	}
+
+	&.competitions {
+		.post-category {
+			background-color: $competitions;
+		}
+
+		.post-title a:hover {
+			color: $competitions;
+		}
+
+		.post-continued a {
+			border-color: $competitions;
+
+			&:hover {
+				color: $competitions;
+			}
+		}
+	}
+
+	&.graduates {
+		.post-category {
+			background-color: $graduates;
+		}
+
+		.post-title a:hover {
+			color: $graduates;
+		}
+
+		.post-continued a {
+			border-color: $graduates;
+
+			&:hover {
+				color: $graduates;
+			}
+		}
+	}
 }
 
 .post-image {
 	background-position: center;
 	background-size: cover;
 	height: 270px;
+	transition: transform 0.15s, border 0.15s;
 
 	@media (min-width: $screen-sm-min) {
 		height: 240px;
+	}
+
+	&:hover {
+		transform: scale(1.1);
 	}
 }
 
@@ -133,59 +215,59 @@
 	}
 
 	// Colors for recent news cards according to category
-	&.competitions {
-		.post-category {
-			background-color: $competitions;
-		}
+	// &.competitions {
+	// 	.post-category {
+	// 		background-color: $competitions;
+	// 	}
 
-		.post-title a:hover {
-			color: $competitions;
-		}
+	// 	.post-title a:hover {
+	// 		color: $competitions;
+	// 	}
 
-		.post-continued a {
-			border-color: $competitions;
+	// 	.post-continued a {
+	// 		border-color: $competitions;
 
-			&:hover {
-				color: $competitions;
-			}
-		}
-	}
+	// 		&:hover {
+	// 			color: $competitions;
+	// 		}
+	// 	}
+	// }
 
-	&.announcements {
-		.post-category {
-			background-color: $announcements;
-		}
+	// &.announcements {
+	// 	.post-category {
+	// 		background-color: $announcements;
+	// 	}
 
-		.post-title a:hover {
-			color: $announcements;
-		}
+	// 	.post-title a:hover {
+	// 		color: $announcements;
+	// 	}
 
-		.post-continued a {
-			border-color: $announcements;
+	// 	.post-continued a {
+	// 		border-color: $announcements;
 
-			&:hover {
-				color: $announcements;
-			}
-		}
-	}
+	// 		&:hover {
+	// 			color: $announcements;
+	// 		}
+	// 	}
+	// }
 
-	&.graduates {
-		.post-category {
-			background-color: $graduates;
-		}
+	// &.graduates {
+	// 	.post-category {
+	// 		background-color: $graduates;
+	// 	}
 
-		.post-title a:hover {
-			color: $graduates;
-		}
+	// 	.post-title a:hover {
+	// 		color: $graduates;
+	// 	}
 
-		.post-continued a {
-			border-color: $graduates;
+	// 	.post-continued a {
+	// 		border-color: $graduates;
 
-			&:hover {
-				color: $graduates;
-			}
-		}
-	}
+	// 		&:hover {
+	// 			color: $graduates;
+	// 		}
+	// 	}
+	// }
 }
 
 
